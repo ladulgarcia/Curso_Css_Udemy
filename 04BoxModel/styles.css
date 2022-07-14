@@ -1,16 +1,27 @@
+/* header{
+    display: flex;
+} */
+
 
 div{
-   /* margin-top: 130px;
-   margin-left:30px;
-   margin-bottom:40px;
-   margin-right: 40px; */
+    /*  display: flex; */
+   /*   margin-top: 130px;
+    margin-left:50px;
+    margin-bottom:40px;
+    margin-right: 40px;
+    margin:0 20p 0 0; */
 
-   margin:0 20p 0 0;
+    /* Lo anterior es lo misno que: */
+    margin: 130px 40px 40px 0;
+
+    /* margin: 0 20px 0 0; */
+ }
+
+h1{ /* Caja roja */
+    border: 3px solid rgb(158, 25, 25);
+    padding: 20px; /* distancia entre el borde y lo contenido en el borde */
 }
-h1{
-    border:3px solid rgb(158, 25, 25);
-    padding-top: 20px;
-}
+
 header{
     border:3px solid black;
 }

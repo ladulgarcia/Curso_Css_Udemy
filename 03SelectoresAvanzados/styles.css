@@ -1,39 +1,45 @@
 /*SELECTORES AVANZADOS*/
 
+
+
+/* **********      Selector Universal: * (asterisco)            ********** */
 /* *{
-   color:blue;
-   margin:30px;
-   font-size: 30px;
+   color:pink;
+   margin:34px; (Margenes arriba 34, abajo y a un lado)
+   font-size: 25px;
 } */
 
-
+/* **********      En caso de darles el mismo estilo            ********** */
 /* h1,h2,p{
-    color:blue;
+    color: green;
 } */
 
+/* **********    Todos los h1 dentro del header serán morados    ********** */
 /* header h1{
-    color:green;
+    color:purple;
 } */
 
 /*Selectores hijos*/
 
-
-/* p>span{
+/* ******* Parrafo mayor que Span o lo mismo que span hijo del parrafo ++* */
+/* ****************    p es mayor que span --> p>span    ***************** */
+/*  Al ser el span hijo de parrafo, el span será en este caso rosa */
+p>span{
     color:pink;
-} */
+}
 
 
 /*Selector abyacente*/
-
-h1 + h2 {color:indigo;}
+/* ******** El h2 que vaya después del H1 será verde */
+h1 + h2 {color: rgb(68, 223, 99)}
 
 
 /*Selectores hermanos */
-
-h1~h2{color:tomato;}
+/* Los selectores hermanos, el hermano h2 del h1 será del color indicado  */
+h1~h2{color:rgb(198, 18, 162);}
 
 /*Selectores de atributo*/
 
 input[type="email"]{
-    background-color: green;
+    background-color: blue;
 }

@@ -2,20 +2,41 @@
 
 /*Por orden de jerarquia las prioridades de los selectores 
 son los siguientes de menos a mas fuerte
-1-Etiquetas
-2-Clases
-3-Identificadores o id 
-4-Estilos en linea 
-5- los famosos !importants
+
+--> (MENOS FUERTE)
+1-Etiquetas: de HTML en hoja de estilos
+
+2-Clases: selector de clase es un nombre precedido por un punto (".")
+   - Clases puede haber muchas es menos específico y es menos fuerte
+
+   3-Identificadores o id: un selector de ID es un nombre precedido por un carácter hash ("#")
+   - Se utiliza cuando se queire dar un color específico a algo, solo aparece una vez en el código
+
+   4-Estilos en linea: declaraciones CSS que se integran en las etiquetas HTML mediante el atributo style
+
+   5- los famosos !importants
+(MAS FUERTE) <--
+
 */
 
 
-h1{
+/* **********    Elimino el estilo de línea en index.html       ********** */
+/* **********           genero estilo en etiqueta h1            ********** */
+/* **********       por lo tanto la cabecera es verde           ********** */
+ h1{
     color:green;
 }
+
+h2{
+    color: violet !important;
+}
+
+/* **********              .titulo es una CLASE                 ********** */
 .titulo{
     color:red;
 }
+
+/* **********    Predomina el ID y portanto la frase es azul    ********** */
 #frase{
      color:blue !important;
-}
+} 
