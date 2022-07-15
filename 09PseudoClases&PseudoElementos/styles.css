@@ -9,10 +9,10 @@ border-radius: 9px;
 button:hover{
     background-color: chartreuse;
     padding:20px;
-    color:blue;
+    color:red;
     font-weight: bolder;
 }
-button:active{
+button:active{ /* Al presionar el boton se verá rosa */
     background-color: pink;
 }
 
@@ -23,9 +23,10 @@ button:active{
     color:red;
 }
 
-input:focus{
+input:focus{ /* Cuando está en foco el input cambia a azul */
     background-color: aqua;
 }
+
 
 
 /*pseudoelementos*/
@@ -37,16 +38,16 @@ p::first-line{
     background-color: aquamarine;
     font-size: 59px;
 }
-p::first-letter{
+p::first-letter{ /* me pone en rojo la primera letra de la frase */
     font-size: 59px;
     color:red;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-p::before{
+p::before{ /*  */
     content:'Soy un texto previo.'
 }
 p::after{
     content:'Soy el cierre del texto.';
     font-size:40px; 
-    color:yellow;
+    color:rgb(195, 152, 33);
 }

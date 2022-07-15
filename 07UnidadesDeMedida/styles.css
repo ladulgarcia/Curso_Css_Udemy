@@ -1,0 +1,50 @@
+/*  UNIDADDES DE MEDIDA */
+
+
+/*  MEDIDAS ABSOLUTAS */
+
+
+/* MEDIDAS RELATIVAS */
+
+
+html{
+    /* font-size: 62.5%; equivale a 10px  */
+    font-size: 100%; /* equivale a 16px */
+}
+
+/* El padre va a ser el primero que tomará la etiqueta del html */
+
+.padre{
+    border: 10px solid blueviolet;
+/*     width: 25em;
+    height: 25em; */
+    font-size: 1em; /* Multiplica 12*16 */
+}
+
+
+
+body{
+   
+    width: 100vw; 
+    width: 50vw; /* Esto es lo que veo en pantalla */
+    height: 100vh;
+    background-color: rgb(216, 148, 46);
+}
+
+/* Y los hijos del padre van a tomar la medida de referencia del 25em, no los 16 em globales */
+/* .hijo{
+    font-size: 2em; */ /* multiplica el size del padre 12 por 1 */
+/*     border: 3px solid rgb(226, 43, 171);
+    width: 15em;
+    height: 15em; */
+
+/* } */
+
+/* .nieto{
+    font-size: 1em;
+    border: 3px solid green;
+    width: 200px;
+    height: 200px;
+    
+}
+ */

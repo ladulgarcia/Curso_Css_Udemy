@@ -1,9 +1,9 @@
 /*4 TIPOS DE POSICIONAMIENTO
 
-static 
-relative 
-absolute 
-fixed 
+static: ya viene por defecto en navegadores; el valor absoluto toma como posición el valor del navegador
+relative: posicion relativa toma como relativa la posiucion del padre. Algo en un contenedor se le da valor relativo
+absolute: toma las coordenadas del navegador; por ejemplo en paginas responsivas
+fixed:
 
 con las posiciones absolutas y relativas 
 vamos a jugar con: 
@@ -19,7 +19,7 @@ bottom
 
 body{
     width:500px;
-    height:2500px;
+    height:2200px;
     border:3px solid black;
     margin-left:240px;
 }
@@ -30,8 +30,9 @@ body{
 
 }
 .caja1{
-    background-color: blue;
+    background-color: navy;
     position:relative;
+    /* left:10px; */
     left:0px;
     top:0px;
 
